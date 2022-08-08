@@ -4,9 +4,13 @@ const app = express();
 require("dotenv").config();
 const cors = require("cors");
 const connectDB = require("./db/connect");
+const errorHandlerMiddleware = require("./middleware/errorHandler");
 
 app.use(express.json());
 app.use(cors());
+
+//error handler middleware
+app.use(errorHandlerMiddleware);
 
 const start = async () => {
   port = process.env.PORT;
