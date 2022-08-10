@@ -10,12 +10,16 @@ const errorHandlerMiddleware = require("./middleware/errorHandler");
 app.use(express.json());
 app.use(cors());
 
+// routes
+// app.use("/api/user", authenticateAdmin, userRoute);
+// app.use("/api/auth", authRoute);
+// app.use("/api/note", noteRoute);
+
 //error handler middleware
 app.use(errorHandlerMiddleware);
 
 const start = async () => {
   port = process.env.PORT;
-
   //create server and connect with mongoDB
   try {
     await connectDB(process.env.MONGO_URL).then((err) =>
