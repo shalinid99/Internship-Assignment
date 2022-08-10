@@ -4,6 +4,7 @@ const app = express();
 require("dotenv").config();
 const cors = require("cors");
 const connectDB = require("./db/connect");
+const authRoute = require("./routes/authRoute");
 const errorHandlerMiddleware = require("./middleware/errorHandler");
 
 app.use(express.json());
