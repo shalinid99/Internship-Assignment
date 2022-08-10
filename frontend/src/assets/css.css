@@ -1,0 +1,196 @@
+/* loader css */
+.loader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+/* Nav bar css */
+.logo{
+    font-size: 2.1rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Poppins';
+    font-weight:bolder;
+    text-shadow: 2px 2px #ff0000;
+}
+.container{
+    display:flex;
+    /* background-color: #ff0000; */
+    gap: 0.7rem;
+    margin-left: 2rem;
+}
+.logo-icon{
+    font-size: 2.5rem;
+    margin-top: 1.7rem;
+    color: #561111;
+}
+
+/* Login css */
+.login-container label{
+color: #561111;
+margin:  10px;
+font-size: large;
+
+}
+.login-container input{
+    width: 100%;
+    border: none;
+    padding:1rem ;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    margin-top: 0.5rem;
+ 
+}
+.login-container textarea{
+    width: 100%;
+    border: none;
+    padding:1rem ;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    margin-top: 0.5rem;
+    height: 10rem;
+ 
+}
+
+.submit-btn{
+    color: white;
+    margin: 1rem;
+    font-size: medium;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); 
+
+}
+
+/* popup css */
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner{
+    /* position: relative; */
+    padding: 32px;
+    width: 30%;
+    background-color:white;
+    height: 420px;
+    border-radius: 3%;
+}
+
+.close-btn{
+    float: right;
+}
+
+.pop-input{
+    width: 100%;
+    margin-top: 10px;
+    font-family: "poppins";
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+    background-color: aliceblue;
+}
+.pop-textaria{
+    width: 100%;
+    margin-top: 10px;
+    font-family: "poppins";
+    border-radius: 10px;
+    border: none;
+    height: 10rem;
+    background-color: aliceblue;
+    
+
+}
+
+.note-update-btn{
+    width: 100%;
+}
+
+
+/* home css */
+
+.logout-btn {
+    background-color: black;
+    color: white;
+    font-family: "poppins";
+    border-radius: 10px;
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+    float: right;
+    margin-top: -4.5rem;
+    margin-right: 2rem;
+}
+.adduser-btn {
+    background-color: black;
+    color: white;
+    font-family: "poppins";
+    border-radius: 10px;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.home-container{
+    height:85vh;
+}
+
+/* user page css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0.5rem 0.5rem;
+    overflow: auto;
+    height: 70vh;
+    margin: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    font-family: "poppins";
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  }
+
+  /* note page css */
+
+  .grid-container-note {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0.5rem 0.5rem;
+    overflow: auto;
+    height: 70vh;
+    margin: 10px;
+  }
+  
+  .grid-item-note {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    font-family: "poppins";
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  }
+
+  
