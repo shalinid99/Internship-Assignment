@@ -9,62 +9,85 @@
     justify-content: center;
     align-items: center;
   }
+
+  .blurBack{
+    backdrop-filter: blur(3px);
+    height: 100vh;
+	width: 100%;
   
+  }
 
 /* Nav bar css */
 .logo{
-    font-size: 2.1rem;
-    letter-spacing: 0.3rem;
+    font-size: 41px;
+    letter-spacing: 0.2rem;
     font-family: 'Poppins';
     font-weight:bolder;
-    text-shadow: 2px 2px #ff0000;
+    margin-left:2rem;
+    text-shadow: 2px 2px gold;
 }
 .container{
     display:flex;
-    /* background-color: #ff0000; */
-    gap: 0.7rem;
-    margin-left: 2rem;
+    background-color: ;
+    gap: 0.9rem;
+    /* margin-left: 2rem; */
 }
 .logo-icon{
     font-size: 2.5rem;
-    margin-top: 1.7rem;
-    color: #561111;
+    margin-top: 2.2rem;
+    margin-left:0rem;
+    color: black;
+    shadow: 2px 2px black;
+    
+}
+.reguser{
+    background-image:url("https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7885.jpg?w=740&t=st=1660163894~exp=1660164494~hmac=b6e8a87073e398d80e376e8c482918ef0b78e199c9aaffa5d62aa540f082346d");
+    background-repeat: "no-repeat";
+      background-position: "right";
+      background-size: "contain";
+      font-family: "Poppins";
+      height: "97.5vh";
 }
 
 /* Login css */
 .login-container label{
 color: #561111;
 margin:  10px;
-font-size: large;
+font-size: 15px;
+color:black;
+font-weight:500;
+margin-top:2rem;
 
 }
 .login-container input{
-    width: 100%;
+    width: 90%;
     border: none;
     padding:1rem ;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: 'Poppins';
-    margin-top: 0.5rem;
- 
+    background-color:rgba(255, 255, 255, 0.8);
+  
 }
 .login-container textarea{
-    width: 100%;
+    width: 90%;
     border: none;
     padding:1rem ;
     border-radius: 20px;
     font-family: 'Poppins';
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     height: 10rem;
  
 }
 
 .submit-btn{
     color: white;
+    width:100%;
     margin: 1rem;
-    font-size: medium;
-    background: #c31432;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #240b36, #c31432); 
+    font-size: 17px;
+    font-weight:"600";
+    background: #e9d362;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333333, #e9d362); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -113,7 +136,6 @@ font-size: large;
     height: 10rem;
     background-color: aliceblue;
     
-
 }
 
 .note-update-btn{

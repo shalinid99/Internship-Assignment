@@ -46,7 +46,7 @@ const userSchema = new mongoose.Schema({
     },
     default: "Student",
   },
-});
+},{ timestamps: true });
 
 //password hashing using mongoose middleware
 userSchema.pre("save", async function () {

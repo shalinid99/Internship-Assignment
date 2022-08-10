@@ -37,17 +37,18 @@ const Login = () => {
       });
   };
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ height: "80vh" }}>
-        <h1 style={{ textAlign: "center", fontSize: "3rem" }}>Login</h1>
+    <Container maxWidth="sm" style={{backgroundColor: "rgba(0, 0, 0, 0.3)", borderRadius:"10px",marginTop:"15px",width:"550px"}}>
+      <Box sx={{ height: "66vh" }} style={{width:"520px",padding:"2px" }}>
+        <h1 style={{ textAlign: "center", fontSize: "3rem",fontWeight:"700",color:"white" }}>Login</h1>
         <p
           style={{
             textAlign: "center",
-            marginTop: "-2rem",
+            marginTop: "-1.5rem",
+            marginBottom:"1.8rem",
             letterSpacing: "0.5rem",
           }}
         >
-          Welcome to the <span style={{ color: "red" }}>notes</span>.
+          Welcome to  <span style={{ color: "gold" }}> one note</span>.
         </p>
         <form onSubmit={submitHandler} className="login-container">
           <label>Email Address</label>
