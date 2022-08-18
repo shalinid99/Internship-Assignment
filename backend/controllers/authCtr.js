@@ -19,18 +19,18 @@ const login = async (req, res) => {
   //find the user details by passing the email to the mongodb
   const user = await User.findOne({ email });
 
-  //if there is no user with the email and password, then trow the error message
+  //if there is no user with the email , then throw the error message
   if (!user) {
     throw new UnAuthenticatedError("Invalid credentials");
   }
 
-  //compare the user enterd password with the password in the Database
+  //compare the user entered password with the password in the Database
   const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) {
-    throw new UnAuthenticatedError("Invalid credentials");
+    throw new UnAuthenticatedError("Invalid password");
   }
 
-  //create the token with the user details and adding secret into it 
+  //create the token with the user details while adding secret into it 
   const token = jwt.sign(    
     {
       userId: user._id,
@@ -38,7 +38,7 @@ const login = async (req, res) => {
       name: user.firstName,
       type: user.type,
       userStatus: user.status,
-    },
+    }, 
     process.env.JWT_SECRET,
     {
       expiresIn: process.env.JWT_LIFETIME,

@@ -26,7 +26,7 @@ const addUser = async (req, res) => {
   });
 
   const msg = {
-    from: '"Shalini De Silva👻" <shalinidesilva@example.com>', // sender address
+    from: '"Shalini De Silva👻" <shalinidesilva@example.com>', // senders address
     to: `${req.body.email}`, // list of receivers
     subject: "User Registration ✔", // Subject line
     text: ` `, // plain text body

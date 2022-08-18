@@ -3,7 +3,7 @@ import jwt from "jwt-decode";
 
 //A function that accepts an initial state, an object of reducer functions,
 //and a "slice name", and automatically generates action creators and action types
-// that correspond to the reducers and state.
+//that correspond to the reducers and state.
 
 const authSlice = createSlice({
   name: "auth",
@@ -17,8 +17,8 @@ const authSlice = createSlice({
     token: null,
   },
   //Reducers are the only way to change states in Redux.
-  // It is the only place where you can write logic and calculations.
-  // function will accept the previous state of app and action being dispatched,
+  //It is the only place where you can write logic and calculations.
+  //Function will accept the previous state of app and action being dispatched,
   //calculate the next state and returns the new object.
   reducers: {
     login(state, action) {

@@ -50,6 +50,7 @@ const Login = () => {
         >
           Welcome to  <span style={{ color: "gold" }}> one note</span>.
         </p>
+        
         <form onSubmit={submitHandler} className="login-container">
           <label>Email Address</label>
           <br />
